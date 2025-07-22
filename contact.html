@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rahul's Heaven Interior</title>
+    <meta name="description"
+        content="Get in touch with Rahul's Heaven Interior for your interior design needs. Free consultation available. Located in Hadapsar, Pune.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="brand-icon me-2">
+                    <i class="fas fa-phone text-white"></i>
+                </div>
+                <span class="fw-bold text-dark">Contact Us</span>
+            </a>
+            <a href="index.html" class="btn btn-outline-secondary btn-sm">
+                <i class="fas fa-arrow-left me-2"></i>Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-gradient text-grey" style="background: linear-gradient(135deg, #1f2937 0%, #d97706 100%);">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Get In Touch With Us</h1>
+            <p class="lead mb-4">Ready to transform your space? We're here to help you every step of the way. Contact us
+                for a free consultation and let's bring your dream interior to life.</p>
+            <div class="row g-3 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-light bg-opacity-10 rounded p-3 text-center">
+                        <i class="fas fa-users fs-3 text-warning mb-2"></i>
+                        <div class="fs-4 fw-bold">500+</div>
+                        <div class="small">Happy Clients</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-light bg-opacity-10 rounded p-3 text-center">
+                        <i class="fas fa-star fs-3 text-warning mb-2"></i>
+                        <div class="fs-4 fw-bold">4.9</div>
+                        <div class="small">Average Rating</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-light bg-opacity-10 rounded p-3 text-center">
+                        <i class="fas fa-calendar fs-3 text-warning mb-2"></i>
+                        <div class="fs-4 fw-bold">10+</div>
+                        <div class="small">Years Experience</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-light bg-opacity-10 rounded p-3 text-center">
+                        <i class="fas fa-check-circle fs-3 text-warning mb-2"></i>
+                        <div class="fs-4 fw-bold">100%</div>
+                        <div class="small">Project Success</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-header bg-white border-0 p-4">
+                            <h3 class="card-title mb-2">Send Us a Message</h3>
+                            <p class="text-muted mb-0">Fill out the form below and we'll get back to you within 24 hours
+                            </p>
+                        </div>
+                        <div class="card-body p-4">
+                            <div id="successMessage" class="alert alert-success d-none">
+                                <div class="text-center">
+                                    <i class="fas fa-check-circle fs-1 text-success mb-3"></i>
+                                    <h4>Message Sent Successfully!</h4>
+                                    <p class="mb-3">Thank you for contacting us. We'll get back to you soon.</p>
+                                    <button class="btn btn-warning" onclick="resetForm()">Send Another Message</button>
+                                </div>
+                            </div>
+
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-medium">Full Name *</label>
+                                        <input type="text" class="form-control" name="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-medium">Phone Number *</label>
+                                        <input type="tel" class="form-control" name="phone" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-medium">Email Address</label>
+                                        <input type="email" class="form-control" name="email">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-medium">Service Interested In</label>
+                                        <select class="form-select" name="service">
+                                            <option value="">Select a service</option>
+                                            <option value="Kitchen Trolleys">Kitchen Trolleys</option>
+                                            <option value="Safety Doors & Grills">Safety Doors & Grills</option>
+                                            <option value="Profile Doors">Profile Doors</option>
+                                            <option value="Wooden Furniture">Wooden Furniture</option>
+                                            <option value="CNC Cutting">CNC Cutting</option>
+                                            <option value="SS Fabrication">SS Fabrication</option>
+                                            <option value="Wardrobes">Wardrobes</option>
+                                            <option value="Hydraulic Beds">Hydraulic Beds</option>
+                                            <option value="TV Units">TV Units</option>
+                                            <option value="Complete Home Interior">Complete Home Interior</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-medium">Message *</label>
+                                        <textarea class="form-control" rows="4" name="message"
+                                            placeholder="Tell us about your project requirements..."
+                                            required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-warning w-100 py-3">
+                                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <!-- Phone -->
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-phone text-warning"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="fw-semibold mb-2">Call Us</h5>
+                                            <p class="text-muted small mb-3">
+                                                9175556967<br>
+                                                9370354460<br>
+
+                                            </p>
+                                            <a href="tel:+919175556967" class="btn btn-warning btn-sm">Call Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-envelope text-warning"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="fw-semibold mb-2">Email Us</h5>
+                                            <p class="text-muted small mb-3">rahul.interior.pune@gmail.com</p>
+                                            <a href="mailto:rahul.interior.pune@gmail.com"
+                                                class="btn btn-warning btn-sm">Send Email</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-map-marker-alt text-warning"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="fw-semibold mb-2">Visit Us</h5>
+                                            <p class="text-muted small mb-3">
+                                                Manjari, Khurd Awhalwadi Road<br>
+                                                Near Holy Angels Convent School<br>
+                                                Hadapsar, Pune - 412307<br>
+                                                Maharashtra, India
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="contact-icon me-3">
+                                            <i class="fas fa-clock text-warning"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="fw-semibold mb-2">Business Hours</h5>
+                                            <p class="text-muted small mb-3">
+                                                Monday - Sunday<br>
+                                                9:00 AM - 9:00 PM<br>
+                                                Open on Holidays<br>
+                                                Consultation by Appointment
+                                            </p>
+                                            <button class="btn btn-warning btn-sm">Book Appointment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="col-12">
+                            <div class="card border-0 bg-light">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-semibold mb-3">Follow Us</h5>
+                                    <div class="d-flex gap-3">
+                                        <a href="https://wa.me/919175556967" target="_blank"
+                                            class="btn btn-success btn-floating">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="https://instagram.com" target="_blank"
+                                            class="btn btn-floating instagram-btn">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="https://facebook.com" target="_blank"
+                                            class="btn btn-primary btn-floating">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold mb-3">Find Us</h2>
+                <p class="text-muted">Visit our office in Hadapsar, Pune</p>
+            </div>
+            <div class="card border-0 shadow-lg overflow-hidden">
+                <div class="bg-light d-flex align-items-center justify-content-center" style="height: 400px;">
+                    <div class="text-center">
+                        <i class="fas fa-map-marker-alt fs-1 text-muted mb-3"></i>
+                        <h4 class="text-muted">Interactive Map</h4>
+                        <p class="text-muted small">Manjari, Khurd Awhalwadi Road, Near Holy Angels Convent School</p>
+                        <p class="text-muted small">Hadapsar, Pune - 412307</p>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-warning mt-3">
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold mb-4">Frequently Asked Questions</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    Do you provide free consultation?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer free initial consultation and 3D design visualization for all our
+                                    clients.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 shadow-sm mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    What is your typical project timeline?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Project timelines vary based on scope, but most residential projects are completed
+                                    within 2-4 weeks.
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="accordion-item border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    Can you work within my budget?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer solutions for various budgets and provide transparent pricing.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+
+            // Show loading state
+            submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission
+            setTimeout(() => {
+                // Hide form and show success message
+                document.getElementById('contactForm').style.display = 'none';
+                document.getElementById('successMessage').classList.remove('d-none');
+            }, 2000);
+        });
+
+        function resetForm() {
+            document.getElementById('contactForm').style.display = 'block';
+            document.getElementById('successMessage').classList.add('d-none');
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+
+</html>
